@@ -35,6 +35,7 @@ function main() {
   return p;
 }
 
-main().then(() => {
+(async function() {
+  await main();
   console.log('fin')
-});
+})();
